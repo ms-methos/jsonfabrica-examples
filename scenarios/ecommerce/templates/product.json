@@ -1,0 +1,6 @@
+{
+  "id": "<createSeq('ecom_product_id')>",
+  "name": "<getRandomTextWithSpaces(8,24)>",
+  "priceCents": "<getRandomNumber(500,50000)>",
+  "inStock": "<getRandomBoolean(0.8)>"
+}

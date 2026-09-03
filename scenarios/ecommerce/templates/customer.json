@@ -1,0 +1,7 @@
+{
+  "id": "<createSeq('ecom_customer_id')>",
+  "name": "<getRandomFullName()>",
+  "email": "<getRandomEmail()>",
+  "address": "<getRandomAddress()>",
+  "createdAt": "<getRandomDate('2023-01-01','2024-06-30')>"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "<createSeq('saas_user_id')>",
+  "tenantId": 0,
+  "fullName": "<getRandomFullName()>",
+  "email": "<getRandomEmail()>",
+  "role": "<getRandomElement('owner','admin','member','viewer')>",
+  "lastActiveAt": "<getRandomDate('2024-10-01','2024-12-31')>"
+}

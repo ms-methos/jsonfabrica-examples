@@ -1,0 +1,24 @@
+{
+  "seed": 77002026,
+  "sequenceNamespace": "examples-saas",
+  "documents": [
+    { "template": "templates/tenant.json", "alias": "tenant", "count": 8 },
+    {
+      "template": "templates/user.json",
+      "alias": "user",
+      "count": 40,
+      "relations": {
+        "tenantId": { "from": "tenant.id", "strategy": "round-robin" }
+      }
+    },
+    {
+      "template": "templates/project.json",
+      "alias": "project",
+      "count": 25,
+      "relations": {
+        "tenantId": { "from": "tenant.id", "strategy": "round-robin" },
+        "ownerUserId": { "from": "user.id", "strategy": "round-robin" }
+      }
+    }
+  ]
+}

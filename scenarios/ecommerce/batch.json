@@ -1,0 +1,17 @@
+{
+  "seed": 20260903,
+  "sequenceNamespace": "examples-ecommerce",
+  "documents": [
+    { "template": "templates/customer.json", "alias": "customer", "count": 20 },
+    { "template": "templates/product.json", "alias": "product", "count": 15 },
+    {
+      "template": "templates/order.json",
+      "alias": "order",
+      "count": 60,
+      "relations": {
+        "customerId": { "from": "customer.id", "strategy": "round-robin" },
+        "productId": { "from": "product.id", "strategy": "round-robin" }
+      }
+    }
+  ]
+}

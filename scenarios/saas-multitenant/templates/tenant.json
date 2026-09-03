@@ -1,0 +1,6 @@
+{
+  "id": "<createSeq('saas_tenant_id')>",
+  "companyName": "<getRandomTextWithSpaces(6,18)>",
+  "plan": "<getRandomElement('free','starter','growth','business')>",
+  "signedUpAt": "<getRandomDate('2022-01-01','2024-12-31')>"
+}

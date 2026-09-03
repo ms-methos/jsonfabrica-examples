@@ -1,0 +1,4 @@
+node_modules/
+.env
+scenarios/*/out.json
+e2e/fixtures/

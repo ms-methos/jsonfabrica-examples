@@ -1,0 +1,14 @@
+{
+  "name": "jsonfabrica-examples",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Worked examples for the JsonFabrica synthetic test data API",
+  "type": "module",
+  "scripts": {
+    "generate": "node scripts/generate.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}
